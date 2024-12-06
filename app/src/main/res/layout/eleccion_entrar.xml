@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f2f2f2"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"
+        android:text="Sportbuddys"
+        android:textAlignment="center"
+        android:textColor="#6200EE"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logosportbuddy"
+        android:contentDescription="Logo de Sportbuddy" />
+
+    <Button
+        android:id="@+id/btnConocerGente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6200EE"
+        android:padding="16dp"
+        android:text="Conocer gente"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    <!--
+    <Button
+        android:id="@+id/btnChatear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#03DAC5"
+        android:padding="16dp"
+        android:text="Chatear"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    -->
+</LinearLayout>

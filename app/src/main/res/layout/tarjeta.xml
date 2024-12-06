@@ -1,0 +1,84 @@
+<!-- Layout de la tarjeta de perfil -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:elevation="4dp">
+
+    <!-- Foto de perfil -->
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/corredor"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp" />
+
+    <!-- Nombre y edad -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageProfile"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"/>
+    </LinearLayout>
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="555dp"
+        android:text="Descripción"
+        android:textSize="28sp" />
+
+    <!-- Contenedor de los botones -->
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp">
+
+        <!-- Botón Dislike alineado a la izquierda -->
+        <ImageButton
+            android:id="@+id/buttonDislike"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/botonx"
+            android:background="@drawable/button_rounded"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+
+        <!-- Botón Like alineado a la derecha -->
+        <ImageButton
+            android:id="@+id/buttonLike"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/botonlike"
+            android:background="@drawable/button_rounded"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

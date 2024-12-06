@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f5f5f5"
+    tools:context=".Perfil">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/corredor"
+        android:contentDescription="Profile Image"/>
+    <!-- Botón para seleccionar una foto -->
+    <Button
+        android:id="@+id/seleccionar_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Foto"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6200EE"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/movil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de teléfono"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="phone"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="descripcion"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6200EE"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
